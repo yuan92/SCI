@@ -1,0 +1,76 @@
+package particules;
+
+import java.awt.Color;
+
+import core.Agent;
+import core.Direction;
+
+public class Sharks extends Agent  {
+
+	private int x, y;
+	private int cpt;
+	private int periodPregnant;
+	private Direction dir;
+	private int xNext = this.getX() + this.getPasX();
+	private int yNext = this.getY() + this.getPasY();
+	
+	public Sharks() {
+		this.color = Color.pink;
+		this.dir = new Direction();
+	}
+	
+	@Override
+	public int getX() {
+		return this.x;
+	}
+
+	@Override
+	public int getY() {
+		return this.y;
+	}
+
+	@Override
+	public int getPasX() {
+		return this.dir.pasX;
+	}
+
+	@Override
+	public int getPasY() {
+		return this.dir.pasY;
+	}
+
+	@Override
+	public void decide() {
+		move();
+	}
+
+	private void move() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void usePostion(int theX, int theY) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void freePosition(int theX, int theY) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setXY(int theX, int theY) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setPasXY(int thePasX, int thePasY) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
